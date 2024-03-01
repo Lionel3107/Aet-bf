@@ -1,0 +1,20 @@
+/* SpinningImage.css */
+
+/* Define the spinning animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinning-image {
+    animation: spin 1s linear infinite; /* Rotate once every 10 seconds */
+}
+
+/* Style the spinning image container */
+.spinning-image-container {
+    display: inline-block;
+}

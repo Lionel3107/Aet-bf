@@ -1,0 +1,142 @@
+.blue-band {
+    padding: 0.5em 1em;
+}
+
+/* General sidebar styles */
+.burger-sidebar {
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    z-index: 100;
+
+}
+
+.close-button{
+    margin:5px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+.menu-item-list {
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-item {
+    text-align: left;
+    font-size: 18px; /* Adjust font size as needed */
+    margin: 0;
+    padding: 10px 20px; /* Add spacing between items */
+    border-bottom: 1px solid #e0e0e0; /* Add a subtle separator between items */
+    transition: background-color 0.2s; /* Smooth background color transition */
+
+    /* Minimalist hover effect */
+    cursor: pointer;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+/*.menu-item>a:hover {*/
+/*    color: #ffffff;*/
+/*}*/
+
+.menu-item:hover {
+    background-color: rgba(65, 105, 225, 0.82); /* Light gray background on hover */
+    color: #ffffff;
+}
+
+.menu-item:hover a{
+    color: #ffffff;
+}
+
+.memu-title {
+    color: black;
+    /*font-size: 40px;*/
+    margin: 1em 0 2em 0;
+    text-align: center;
+    border-bottom: 3px solid #808080;
+    /* text-decoration: underline;
+    text-underline-offset: 0.5em; */
+}
+
+@keyframes gelatin {
+    0%, 100% {
+        transform: scaleX(1);
+    }
+    20%, 80% {
+        transform: scaleX(0.9);
+    }
+    40%, 60% {
+        transform: scaleX(1.1);
+    }
+}
+
+
+/* Initial styles for closed state */
+.burger-sidebar {
+    right: -60vw; /* Start off-screen */
+    transform-origin: right center; /* Set the transform origin to the left center */
+    transition: right 0.3s ease-in-out, transform 0.6s ease-in-out; /* Add transitions for left and transform */
+}
+
+/* Styles for open state */
+.burger-sidebar.open {
+    right: 0; /* Slide in from the right */
+    animation: gelatin 0.6s ease; /* Apply the bounce animation */
+}
+
+/* Styles for closed state */
+.burger-sidebar.closed {
+    right: -60vw; /* Slide out to the right */
+}
+
+
+
+
+
+
+
+
+
+

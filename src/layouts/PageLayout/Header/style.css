@@ -1,0 +1,160 @@
+header {
+
+}
+
+.top-bar{
+    text-align: center ;
+    display: flex;
+    background-color: #4169E1;
+    padding: 0.5em 1em;
+}
+
+.top-bar-box {
+    flex: 1; /* Each box takes an equal amount of space */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.top-bar-box.logo-container{
+    /*display: flex;*/
+    /*justify-content: center; !* Horizontally center the content *!*/
+    /*align-items: center; !* Vertically center the content *!*/
+}
+
+.top-bar-box.social-icons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icons a{
+    margin-left: 0.4em;
+}
+
+.top-bar-box.cart-menu{
+    justify-content: flex-end;
+}
+
+.top-bar-box.cart-menu > .cart-menu-burger-menu {
+    margin-left: 1.5em;
+}
+
+/* styles.css */
+
+/* Style the horizontal navigation bar */
+.horizontal-nav {
+    background-color: #333; /* Background color of the navigation bar */
+    padding: 10px 0; /* Add some padding for spacing */
+    display: flex;
+    justify-content: flex-end;
+
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Style the menu items */
+.horizontal-nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2em;
+}
+
+.horizontal-nav li {
+    display: inline; /* Display menu items horizontally */
+    margin-right: 2em; /* Add spacing between menu items */
+}
+
+/* Style the menu item links */
+.menu-item {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for menu items */
+    font-weight: bold; /* Make menu item text bold */
+
+}
+
+.nous-contacter{
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove any text decoration (underline) */
+}
+.inscription a {
+    color: #ffffff; /* Couleur du texte */
+    background-color: #4169E1; /* Couleur de fond */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+    text-decoration: none; /* Suppression du soulignement */
+    display: inline-block; /* Affichage en ligne avec bloc */
+}
+
+.inscription a:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+.inscription a i {
+    margin-left: 5px; /* Espacement entre le texte et l'icône */
+}
+
+.cart a{
+    color: #ffffff; /* Couleur du texte */
+    background-color: #4169E1; /* Couleur de fond */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+    text-decoration: none; /* Suppression du soulignement */
+    display: inline-block; /* Affichage en ligne avec bloc */
+}
+.cart a:hover{
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+
+
+
+
+/* Mobile-first styles (applies to all screen sizes) */
+
+/* Styles for screens up to 768px (e.g., smartphones in portrait mode) */
+@media (max-width: 768px) {
+    /* Your mobile-specific styles go here */
+    .nav-bar-lg , .nous-contacter{
+        display: none;
+    }
+
+}
+
+
+/* Tablet-first styles (applies to tablet and larger screens) */
+
+/* Styles for screens between 769px and 1024px (e.g., tablets in portrait mode) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+    .logo-container{
+        display: none;
+    }
+
+    .cart-menu > .cart-menu-burger-menu {
+        display: none;
+    }
+
+
+}
+
+
+/* Desktop-first styles (applies to desktop and larger screens) */
+
+/* Styles for screens wider than 1024px (e.g., desktop monitors) */
+@media (min-width: 1025px) {
+    /* Your desktop-specific styles go here */
+    .logo-container{
+        display: none;
+    }
+
+    .cart-menu > .cart-menu-burger-menu {
+        display: none;
+    }
+}

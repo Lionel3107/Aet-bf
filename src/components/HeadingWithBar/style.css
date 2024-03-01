@@ -1,0 +1,52 @@
+/*!* TitleWithBar.css *!*/
+
+/*.title-container-HeadingWithBar {*/
+/*    text-align: center; !* Center-align the title and bar *!*/
+/*}*/
+
+/*.title-HeadingWithBar {*/
+/*    font-size: 24px; !* Adjust the font size as needed *!*/
+/*    margin-bottom: 10px; !* Add space between the title and bar *!*/
+/*    position: relative; !* Position relative for pseudo-element *!*/
+/*}*/
+
+/*.bar-HeadingWithBar {*/
+/*    width: 10em; !* Width of the decorative bar *!*/
+/*    height: 4px; !* Height of the decorative bar *!*/
+/*    background-color: #007bff; !* Color of the decorative bar *!*/
+/*    bottom: 0; !* Position at the bottom of the title *!*/
+/*    left: 50%; !* Center the bar horizontally *!*/
+/*    transform: translateX(-50%); !* Center the bar horizontally *!*/
+/*    position: relative;*/
+/*}*/
+
+
+/* style.css */
+
+/* Define a CSS variable for the bar color with a default value */
+:root {
+    --bar-color: 'black';
+}
+
+.title-container-HeadingWithBar {
+    text-align: center; /* Center-align the title and bar */
+}
+
+.title-HeadingWithBar {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add some space between the title and bar */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.title-HeadingWithBar::before {
+    content: "";
+    width: calc(2/3 * 100%); /* Set the width to 2/3 of the parent width */
+    height: 4px; /* Height of the decorative bar */
+    background-color: var(--bar-color); /* Use the CSS variable for the bar color */
+    bottom: -10px; /* Position at the bottom of the title and add padding */
+    left: 50%; /* Center the bar horizontally */
+    transform: translateX(-50%); /* Center the bar horizontally */
+    position: absolute;
+    display: block;
+    content: "";
+}

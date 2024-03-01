@@ -1,0 +1,80 @@
+section{
+    margin-bottom: 1em;
+}
+
+.banner{
+    height: 20em;
+    background-color:blueviolet;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner > .welcome-msg{
+    color: #FFD700;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.call-to-action-button{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.button-more-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-amical{
+    margin-bottom: 100em;
+}
+
+
+/* Tablet-first styles (applies to tablet and larger screens) */
+
+/* Styles for screens between 769px and 1024px (e.g., tablets in portrait mode) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+    .banner > .welcome-msg{
+        font-size: 25px;
+    }
+}
+
+
+/* Desktop-first styles (applies to desktop and larger screens) */
+
+/* Styles for screens wider than 1024px (e.g., desktop monitors) */
+@media (min-width: 1025px) {
+    .banner{
+        height: 30em;
+    }
+    /* Your desktop-specific styles go here */
+    .banner > .welcome-msg{
+        font-size: 50px;
+        width: 1053px;
+    }
+
+    .last-news-cards-container{
+        display: flex;
+    }
+
+    .last-news-card{
+        width: 100em;
+        height: 20em;
+    }
+}
