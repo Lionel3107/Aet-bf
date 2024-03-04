@@ -33,8 +33,8 @@ const Home: React.FC<any> = () => {
                 alt: 'Post 1 Image',
             },
             text: `ow, I can see why people think this way. I don’t come from wealth either and even I have directed my irritation of elitism towards my more well-to-do classmates. Snobby attitudes aside, their lack of budget generally means high-quality design outcomes, and that puts them ahead of the competition in our very competitive world of design.
-The gamers call it a “Pay-to-Win” system, and the design industry, or the entire world, works pretty much like that.
-So why are we getting so emotional over the fact? And is formal education truly elitist, or just something we don’t like because most of us can’t attain it?`,
+                    The gamers call it a “Pay-to-Win” system, and the design industry, or the entire world, works pretty much like that.
+                    So why are we getting so emotional over the fact? And is formal education truly elitist, or just something we don’t like because most of us can’t attain it?`,
         },
         {
             image: {

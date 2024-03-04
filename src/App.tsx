@@ -17,9 +17,12 @@ function App() {
                       path="/"
                       element={<Home />}
                   />
-                  <Route path="historique" element={<Home />} />
+                  <Route
+                      path="/test"
+                      element={<Home />}
+                  />
 
-                  <Route path="" element={<ErrorPage />} /> {/* Catch-all route for error */}
+                  <Route path="" element={<ErrorPage />} /> {}
               </Route>
           </Routes>
       </BrowserRouter>
